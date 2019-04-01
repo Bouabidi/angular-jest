@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login.component';
 import { HomeComponent, SearchComponent } from './router/router';
 import { ToggleComponent } from './component/toggle/toggle.component';
+import { HoverFocusDirective } from './directive/hoverfocus.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ToggleComponent } from './component/toggle/toggle.component';
     SearchComponent,
     HomeComponent,
     ToggleComponent,
+    HoverFocusDirective,
   ],
   imports: [
     BrowserModule,
