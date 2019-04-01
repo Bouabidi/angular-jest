@@ -33,18 +33,18 @@ describe('OptionPipe', () => {
 
   it('should get text by value from enum', () => {
     const testEnum = toEnum({
-      smart: { text: 'smartxxx' },
-      amg: { text: 'amgyyyy' },
+      hehehe: { text: 'hehehexxx' },
+      hahaha: { text: 'hahahayyyy' },
     });
-    expect((new OptionPipe()).transform('smart', testEnum)).toEqual('smartxxx');
+    expect((new OptionPipe()).transform('hehehe', testEnum)).toEqual('hehehexxx');
     expect((new OptionPipe()).transform('somethingCannotBeFound', testEnum)).toEqual('somethingCannotBeFound');
   });
   it('should get value directly when cannot find input in option array', () => {
     const testArray = [
-      { text: 'smartxxx', value: 'smart' },
-      { text: 'amgyyyy', value: 'amg' },
+      { text: 'hehehexxx', value: 'hehehe' },
+      { text: 'hahahayyyy', value: 'hahaha' },
     ];
-    expect((new OptionPipe()).transform('smart', testArray)).toEqual('smartxxx');
+    expect((new OptionPipe()).transform('hehehe', testArray)).toEqual('hehehexxx');
     expect((new OptionPipe()).transform('somethingCannotBeFound', testArray)).toEqual('somethingCannotBeFound');
   });
 });
