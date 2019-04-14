@@ -7,6 +7,7 @@ import { LoginComponent } from './component/login.component';
 import { HomeComponent, SearchComponent } from './router/router';
 import { ToggleComponent } from './component/toggle/toggle.component';
 import { HoverFocusDirective } from './directive/hoverfocus.directive';
+import { FormComponent } from './component/form/form.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HoverFocusDirective } from './directive/hoverfocus.directive';
     HomeComponent,
     ToggleComponent,
     HoverFocusDirective,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
